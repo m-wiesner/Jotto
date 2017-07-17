@@ -33,7 +33,7 @@ string MaxinfoGuesser::guess() const
     double max_info = 0.0;
      
     int i = 0;
-    for(list<const string>::const_iterator it = wordlist.begin();
+    for(list<string>::const_iterator it = wordlist.begin();
         it != wordlist.end(); ++it)
     {
         if ((rand() % numwords) < (numwords * SAMPLING_PROB)) 
@@ -55,7 +55,7 @@ double MaxinfoGuesser::calc_information (const string& s) const
 {
     double count_of_counts [JOTTO_LENGTH + 1];
     //for w in wordlist
-    for (list<const string>::const_iterator it = wordlist.begin();
+    for (list<string>::const_iterator it = wordlist.begin();
          it != wordlist.end(); ++it)
     {
         ++count_of_counts[score(s, *it)];

@@ -55,7 +55,7 @@ string Guesser::submit_codeword() const
 // "Set" guesses by adding a new guess
 void Guesser::add_guess(const string& word, const int& word_score)
 {
-    pair<const string, int> g(word, word_score);
+    pair<string, int> g(word, word_score);
     guesses.push_back(g);
 }
 
@@ -69,7 +69,7 @@ string Guesser::get_player() const
 
 
 // Get wordlist size
-list<const string>::size_type Guesser::get_wordlist_size() const
+list<string>::size_type Guesser::get_wordlist_size() const
 {
     return wordlist.size();
 }
@@ -81,7 +81,7 @@ string Guesser::guess() const
     int numwords = wordlist.size(); 
     
     // Random word
-    list<const string>::const_iterator itr = wordlist.begin();
+    list<string>::const_iterator itr = wordlist.begin();
     int stop = rand() % numwords;
     for(int i = 0; i < stop; ++i)
     {
@@ -99,11 +99,11 @@ void Guesser::update() {}
 void Guesser::print_wordlist (int max_rows) const
 {
     int num_rows = 0;
-    list<const string>::size_type numwords = get_wordlist_size();
+    list<string>::size_type numwords = get_wordlist_size();
 
     // Print first max_rows number of words  
     cout << " --------------------------------------- " << endl;
-    for (list<const string>::const_iterator it = wordlist.begin();
+    for (list<string>::const_iterator it = wordlist.begin();
          (it != wordlist.end()) && (num_rows < max_rows); ++it)
     {
         cout << *it << endl;
@@ -125,7 +125,7 @@ void Guesser::print_wordlist (int max_rows) const
 void Guesser::print_guesses() const
 {
     cout << " -------- Guesses ------ " << player << " ----------------- " << endl;
-    for (vector< pair<const string, int> >::const_iterator it = guesses.begin();
+    for (vector< pair<string, int> >::const_iterator it = guesses.begin();
          it != guesses.end(); ++it)
     {
         cout << it->first << " :: " << it->second << endl;
