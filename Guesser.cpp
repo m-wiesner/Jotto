@@ -16,7 +16,7 @@ using namespace std;
 Guesser::Guesser (const string& name, const string& path_to_wordlist) :
     player(name), guesses()
 {
-    set_wordlist(path_to_wordlist);
+    set_wordlist(path_to_wordlist.c_str());
 }
 
 
