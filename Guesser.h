@@ -15,7 +15,7 @@ class Guesser {
       
         // Getters
         std::string get_player() const;
-        std::list<const std::string>::size_type get_wordlist_size() const;
+        std::list<std::string>::size_type get_wordlist_size() const;
         
         // Setters
         int set_wordlist (const std::string&);
@@ -33,8 +33,8 @@ class Guesser {
     protected:
         // Members 
         std::string player;
-        std::vector< std::pair<const std::string, int> > guesses; // List of guesses and scores
-        std::list<const std::string> wordlist; // List of candidate words
+        std::vector< std::pair<std::string, int> > guesses; // List of guesses and scores
+        std::list<std::string> wordlist; // List of candidate words
 }; 
 
 #endif

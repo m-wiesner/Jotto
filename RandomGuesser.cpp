@@ -19,7 +19,7 @@ void RandomGuesser::update()
 {
     // Score all words in the dictionary against w and remove
     // all entries that have a different score
-    list<const string>::iterator it = wordlist.begin();
+    list<string>::iterator it = wordlist.begin();
     while (it != wordlist.end())
     {
         if (compare_words(*it))
@@ -33,7 +33,7 @@ void RandomGuesser::update()
     }
     
     // Takes care of removing words that are only permuations of letters
-    list<const string>::const_iterator last_it = find(wordlist.begin(), wordlist.end(), guesses.back().first); 
+    list<string>::const_iterator last_it = find(wordlist.begin(), wordlist.end(), guesses.back().first); 
     if (last_it != wordlist.end())
     {
         wordlist.erase(last_it);
@@ -53,7 +53,7 @@ void RandomGuesser::update()
 bool RandomGuesser::compare_words (const string& w) const
 {
     // Get last word
-    pair<const string, int> last_guess = guesses.back();
+    pair<string, int> last_guess = guesses.back();
     return score(last_guess.first, w) != last_guess.second; 
 }
 
