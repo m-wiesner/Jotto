@@ -3,6 +3,7 @@
 #include <string>
 #include <vector>
 #include <list>
+#include <algorithm>
 #include <utility>
 #include <cstdlib>
 #include "Guesser.h"

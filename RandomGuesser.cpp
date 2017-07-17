@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <list>
+#include <algorithm>
 #include <utility>
 #include <cstdlib>
 #include "Jotto_utils.h"
