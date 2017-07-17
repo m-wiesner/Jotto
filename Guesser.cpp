@@ -16,7 +16,7 @@ using namespace std;
 Guesser::Guesser (const string& name, const string& path_to_wordlist) :
     player(name), guesses()
 {
-    set_wordlist(path_to_wordlist.c_str());
+    set_wordlist(path_to_wordlist);
 }
 
 
@@ -25,7 +25,7 @@ Guesser::Guesser (const string& name, const string& path_to_wordlist) :
 // Set wordlist from path to dictionary
 int Guesser::set_wordlist(const string& path_to_wordlist)
 {
-    ifstream infile(path_to_wordlist);
+    ifstream infile(path_to_wordlist.c_str());
     string line;
 
     if (infile.is_open())
