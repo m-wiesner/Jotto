@@ -34,7 +34,7 @@ void RandomGuesser::update()
     }
     
     // Takes care of removing words that are only permuations of letters
-    list<string>::const_iterator last_it = find(wordlist.begin(), wordlist.end(), guesses.back().first); 
+    list<string>::iterator last_it = find(wordlist.begin(), wordlist.end(), guesses.back().first); 
     if (last_it != wordlist.end())
     {
         wordlist.erase(last_it);
