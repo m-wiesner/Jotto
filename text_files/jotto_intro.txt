@@ -31,13 +31,13 @@ Player1 has secret word "hello"
 Player2 guesses the word "skill"
 
       s : Absent from hello         0
-      k : Present in hello        + 1
+      k : Absent from hello       + 0
       i : Absent from hello       + 0
       l : Present in hello        + 1
       l : Present again in hello  + 1
       --------------------------------
-                                    3
-      skill scores 3
+                                    2
+      skill scores 2
 ____________________________________________________________
 
 
