@@ -1,5 +1,4 @@
-===============================================================================
-                                      JOTTO
+JOTTO
 ===============================================================================
 Jotto is a code breaking game played between two players.
 
@@ -40,8 +39,7 @@ Player2 guesses the word "skill"
       skill scores 3
 ____________________________________________________________
 
-===============================================================================
-                               INSTALLATION 
+INSTALLATION 
 ===============================================================================
 After cloning the repo, just type in the terminal.
 
@@ -52,8 +50,7 @@ To "uninstall" type
   make clean
 
 
-===============================================================================
-                                   RULES
+RULES
 ===============================================================================
 
 1. At the beginning of the game when promted, enter a valid 5 letter word to be
@@ -63,8 +60,7 @@ To "uninstall" type
    letters.
 
 
-===============================================================================
-                                 FUTURE WORK
+FUTURE WORK
 ===============================================================================
 1. Language Fluency
 
@@ -99,8 +95,8 @@ work out and program.
 
 I would like to add a few features that allows the user to view candidate words
 from the word list given certain criteria, as well as to automatically view the
-potential combinations of words. This will require more of an event based 
-program.
+potential valid letter combinations for each guess. This will require more of
+an event based program.
 
 
 4. GUI
